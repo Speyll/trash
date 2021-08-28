@@ -3,8 +3,6 @@
 # Load files
 ${HOME}/.config/bspwm/autostart.sh &
 
-xrandr --output Virtual1 --mode 1440x900 &
-
 # Defaults
 amixer -q set Master 100% &
 xbacklight -set 60 &
