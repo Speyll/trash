@@ -61,10 +61,6 @@ XF86AudioMute
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# Close all
-super + alt + q
-	pkill bar.sh | pkill launch.sh | pkill curl | pkill lemonbar | pkill wget
-
 # Close and kill
 super + {_,shift + }q
 	bspc node -{c,k}

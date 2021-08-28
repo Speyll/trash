@@ -22,16 +22,16 @@ Privip (){
 
 # Public IP
 Pubip (){
-	curl ifconfig.me 2>/dev/null
+	curl -s ifconfig.me 2>/dev/null
 }
 
 # Weather
 Wttr (){
-	curl "wttr.in/Algiers?format=+%C+%t"
+	curl -s wttr.in/Algiers?format=+%C+%t 2>/dev/null
 }
 
 # Output
 while true; do
-	echo "%{l} $(Privip)$(Sep)$(Pubip)%{r}$(Wttr)$(Sep)$(Date)$(Sep)$(Clock) "
+	echo "%{l} $(Privip)$(Sep)$(Pubip)%{r}$(Wttr)$(Sep)$(Date)$(Sep)$(Clock) " 2>/dev/null
 	sleep 5s
 done
