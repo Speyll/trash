@@ -24,37 +24,40 @@ Sxiv.background: #0c0c0c
 
 ! general
 *.alpha: 0.9
-*background: rgb:c/c/c
-*foreground: rgb:ee/e8/d5
+*background: #2E3440
+*foreground: #D8DEE9
+*.cursorColor: #D8DEE9
+*fading: 35
+*fadeColor: #4C566A
 
 ! blacks
-*color0: rgb:58/6e/75
-*color8: rgb:65/7b/83
+*color0: #2E3440
+*color8: #88C0D0
 
 ! reds
-*color1: rgb:dc/32/2f
-*color9: rgb:e3/59/53
+*color1: #3B4252
+*color9: #81A1C1
 
 ! greens
-*color2: rgb:85/99/0
-*color10: rgb:9d/ac/2d
+*color2: #434C5E
+*color10: #5E81AC
 
 ! yellows
-*color3: rgb:b5/89/0
-*color11: rgb:c3/9f/2d
+*color3: #4C566A
+*color11: #BF616A
 
 ! blues
-*color4: rgb:26/8b/d2
-*color12: rgb:51/a0/d5
+*color4: #D8DEE9
+*color12: #D08770
 
 ! magentas
-*color5: rgb:d3/36/82
-*color13: rgb:db/5c/95
+*color5: #E5E9F0
+*color13: #EBCB8B
 
 ! cyans
-*color6: rgb:2a/a1/98
-*color14: rgb:54/b2/a7
+*color6: #ECEFF4
+*color14: #A3BE8C
 
 ! whites
-*color7: rgb:ee/e8/d5
-*color15: rgb:fd/f6/e3
+*color7: #8FBCBB
+*color15: #B48EAD

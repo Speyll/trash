@@ -1,4 +1,4 @@
-# Configuration for Alacritty, the GPU enhanced terminal emulator
+﻿# Configuration for Alacritty, the GPU enhanced terminal emulator
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -128,48 +128,54 @@ draw_bold_text_with_bright_colors: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
 
-solarized-dark: &dark
-    primary:
-      background: '#0c0c0c'
-      foreground: '#eee8d5'
-
-    cursor:
-      text: '#0c0c0c'
-      cursor: '#6c71c4'
-
-    selection:
-      text: '#0c0c0c'
-      background: '#268bd2'
-
-    normal:
-      black: '#586e75'
-      red: '#dc322f'
-      green: '#859900'
-      yellow: '#b58900'
-      blue: '#268bd2'
-      magenta: '#d33682'
-      cyan: '#2aa198'
-      white: '#eee8d5'
-
-    bright:
-      black: '#657b83'
-      red: '#E35953'
-      green: '#9DAC2D'
-      yellow: '#C39F2D'
-      blue: '#51A0D5'
-      magenta: '#DB5C95'
-      cyan: '#54B2A7'
-      white: '#fdf6e3'
-
-    dim:
-      black: '#0c0c0c'
-      red: '#B22A28'
-      green: '#6D7D02'
-      yellow: '#937002'
-      blue: '#2172AA'
-      magenta: '#AB2E6A'
-      cyan: '#24837C'
-      white: '#93a1a1'
+colors:
+  primary:
+    background: '#2e3440'
+    foreground: '#d8dee9'
+    dim_foreground: '#a5abb6'
+  cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  vi_mode_cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  selection:
+    text: CellForeground
+    background: '#4c566a'
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+    bar:
+      background: '#434c5e'
+      foreground: '#d8dee9'
+  normal:
+    black: '#3b4252'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#88c0d0'
+    white: '#e5e9f0'
+  bright:
+    black: '#4c566a'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#8fbcbb'
+    white: '#eceff4'
+  dim:
+    black: '#373e4d'
+    red: '#94545d'
+    green: '#809575'
+    yellow: '#b29e75'
+    blue: '#68809a'
+    magenta: '#8c738c'
+    cyan: '#6d96a5'
+    white: '#aeb3bb'
 
   # Indexed Colors
   #
