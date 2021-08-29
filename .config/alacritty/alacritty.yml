@@ -130,8 +130,8 @@ custom_cursor_colors: true
 
 colors:
   primary:
-    background: '#2e3440'
-    foreground: '#d8dee9'
+    background: '#0c0c0c'
+    foreground: '#f2f2f2'
     dim_foreground: '#a5abb6'
   cursor:
     text: '#2e3440'

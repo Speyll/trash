@@ -24,14 +24,14 @@ Sxiv.background: #0c0c0c
 
 ! general
 *.alpha: 0.9
-*background: #2E3440
-*foreground: #D8DEE9
-*.cursorColor: #D8DEE9
+*background: #0c0c0c
+*foreground: #f2f2f2
+*.cursorColor: #f2f2f2
 *fading: 35
 *fadeColor: #4C566A
 
 ! blacks
-*color0: #2E3440
+*color0: #0c0c0c
 *color8: #88C0D0
 
 ! reds

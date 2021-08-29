@@ -105,11 +105,13 @@ syntax enable
 " Enable mouse support
 set mouse=a
 
+" Colors
+set t_Co=16
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
 call plug#begin()
-Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-surround'
 Plug 'junegunn/goyo.vim'
 Plug 'ap/vim-css-color'
@@ -119,6 +121,3 @@ autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
-
-" Colorscheme
-colorscheme nord
