@@ -1,5 +1,6 @@
-# Settings
+# General settings
 borderwidth 2
+fontname "monospace:pixelsize=12:Regular"
 snapdist 5
 gap 0 0 0 0
 sticky yes
@@ -8,14 +9,18 @@ sticky yes
 unbind-key all
 bind-key 4S-Return	alacritty
 bind-key 4-d		menu-exec
+# menu-cmd menu-group menu-ssh menu-exec-wm
+bind-key 4-s        search
 
 # Colors
-color font "#ebdbb2"
-color selfont "#b8bb26"
 color activeborder "#98971a"
 color inactiveborder "#ebdbb2"
+
+color font "#ebdbb2"
+color selfont "#b8bb26"
+
 color menufg "#ebdbb2"
-color menubg "#282828"
+color menubg "#cc241"
 
 # Keybindings
 bind-key M-Tab      window-cycle
@@ -38,16 +43,10 @@ autogroup 1 "Navigator,Firefox"
 autogroup 3 "mpv"
 
 # Commands
-command term alacritty
-command lock "slock" # activer avec C-M-Suppr
-
-command "   Web   " firefox
-command "   Mail  " thunderbird
-command "  Files  " pcmanfm
-command ">> next  " "mpc next"
-command "<< prev  " "mpc prev"
-command "|> toggle" "mpc toggle"
-command "   top   " "alacritty -e top"
+command term 	"alacritty"
+command lock	"slock" # activer avec C-M-Suppr
+command firefox "firefox"
+command nnn 	"alacritty -e nnn"
 
 # Special Keys
 bind-key XF86AudioLowerVolume "/usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -5%"
@@ -86,9 +85,11 @@ bind-key MS-underscore       window-movetogroup-8
 bind-key MS-ccedilla         window-movetogroup-9
 
 # Tiling
-bind-key M-t window-vtile
-bind-key M-Return window-vtile
-bind-key MS-t window-htile
+htile 55%
+vtile 55%
+bind-key 4-t window-vtile
+bind-key 4-Return window-vtile
+bind-key 4S-t window-htile
 
 # Ignore, and do not warp to, windows with these names
 ignore dmenu

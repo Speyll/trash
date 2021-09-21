@@ -1,13 +1,10 @@
 #!/bin/sh
 
-# Kill bars
-pkill polybar | pkill lemonbar
-
 # Set Wallpaper
-hsetroot -solid "#f2f2f2" &
+hsetroot -solid "#fbf1c7" &
 
 # Launch things
-$HOME/.config/picom/launch.sh &
+#$HOME/.config/picom/launch.sh &
 #$HOME/.config/sxhkd/launch.sh &
 #$HOME/.config/polybar/launch.sh &
 #$HOME/.config/lemonbar/launch.sh &

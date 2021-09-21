@@ -18,9 +18,9 @@ urxvt.cursorBlink: true
 ! urxvt.shading: 10
 
 ! sxiv settings
-Sxiv.font: Ioveska Term
-Sxiv.foreground: #f2f2f2
-Sxiv.background: #0c0c0c
+Sxiv.font: Hack
+Sxiv.foreground: #ebdbb2
+Sxiv.background: #282828
 
 ! general
 *.alpha: 0.9
