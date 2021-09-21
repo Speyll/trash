@@ -1,3 +1,7 @@
+#!/bin/sh
+pkill -x lemonbar
+while pgrep -u $UID -x lemonbar >/dev/null; do sleep 1; done
+
 # Colors
 background="#0c0c0c"
 color1="#f2f2f2"

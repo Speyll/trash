@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Load files
-${HOME}/.config/bspwm/autostart.sh &
-
 # Defaults
 amixer -q set Master 100% &
 xbacklight -set 60 &

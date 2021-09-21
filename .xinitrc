@@ -9,5 +9,8 @@ fi
 # rice
 xrdb -merge $HOME/.Xresources &
 
+# Load files
+"${HOME}"/.config/autostart/autostart.sh &
+
 # wm settings
-exec bspwm
+exec cwm

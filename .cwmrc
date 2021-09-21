@@ -1,0 +1,98 @@
+# Settings
+borderwidth 2
+snapdist 5
+gap 0 0 0 0
+sticky yes
+
+# Executables
+unbind-key all
+bind-key 4S-Return	alacritty
+bind-key 4-d		menu-exec
+
+# Colors
+color font "#d4be98"
+color selfont "#ea6962"
+color activeborder "#d4be98"
+color inactiveborder "#d4be98"
+color menufg "#282828"
+color menubg "#282828"
+
+# Keybindings
+bind-key M-Tab      window-cycle
+bind-key 4-Tab      group-cycle
+bind-key 4-f        window-maximize
+bind-key 4-space    window-fullscreen
+bind-key 4S-q       window-close
+bind-key 4S-b       window-vmaximize
+bind-key 4M-r       restart
+bind-key 4M-Escape  quit
+
+# Mousebindings
+unbind-mouse all
+bind-mouse 4-3 window-resize
+bind-mouse 4-1 window-move
+bind-mouse 4-2 window-lower
+
+# Auto group with xprop
+autogroup 1 "Navigator,Firefox"
+autogroup 3 "mpv"
+
+# Commands
+command term alacritty
+command lock "slock" # activer avec C-M-Suppr
+
+command "   Web   " firefox
+command "   Mail  " thunderbird
+command "  Files  " pcmanfm
+command ">> next  " "mpc next"
+command "<< prev  " "mpc prev"
+command "|> toggle" "mpc toggle"
+command "   top   " "alacritty -e top"
+
+# Special Keys
+bind-key XF86AudioLowerVolume "/usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -5%"
+bind-key XF86AudioRaiseVolume "/usr/bin/pactl set-sink-volume @DEFAULT_SINK@ +5%"
+bind-key XF86AudioMute "/usr/bin/pactl set-sink-mute @DEFAULT_SINK@ toggle"
+bind-key XF86MonBrightnessUp "/bin/xbacklight -inc 10"
+bind-key XF86MonBrightnessDown "/bin/xbacklight -dec 10"
+
+# Groupes
+# Groups keyboard bind-keyings
+bind-key 4-g                grouptoggle
+bind-key 4-Right            cyclegroup
+bind-key 4-Left             rcyclegroup
+
+# Move to group
+bind-key M-ampersand        group-only-1
+bind-key M-eacute           group-only-2
+bind-key M-quotedbl         group-only-3
+bind-key M-apostrophe       group-only-4
+bind-key M-parenleft        group-only-5
+bind-key M-minus            group-only-6
+bind-key M-egrave           group-only-7
+bind-key M-underscore       group-only-8
+bind-key M-ccedilla         group-only-9
+bind-key M-agrave           group-toggle-all
+
+# Move windows to group
+bind-key MS-ampersand        window-movetogroup-1
+bind-key MS-eacute           window-movetogroup-2
+bind-key MS-quotedbl         window-movetogroup-3
+bind-key MS-apostrophe       window-movetogroup-4
+bind-key MS-parenleft        window-movetogroup-5
+bind-key MS-minus            window-movetogroup-6
+bind-key MS-egrave           window-movetogroup-7
+bind-key MS-underscore       window-movetogroup-8
+bind-key MS-ccedilla         window-movetogroup-9
+
+# Tiling
+bind-key M-t window-vtile
+bind-key M-Return window-vtile
+bind-key MS-t window-htile
+
+# Ignore, and do not warp to, windows with these names
+ignore dmenu
+ignore dzen2
+ignore lemonbar
+ignore tint2
+ignore polybar

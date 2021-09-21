@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
 Name=Text editor
-TryExec=nvim
-Exec=nvim %u
+TryExec=mle
+Exec=mle %u
 Terminal=true
 Type=Application
 Categories=Utility;TextEditor;

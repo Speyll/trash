@@ -2,20 +2,18 @@
 # .profile - Bourne Shell startup script for login shells
 
 # Personal additional paths in ~/.local/bin:
-export PATH=$PATH$(find $HOME/.local/bin/ -type d -printf ":%p") 
+export PATH=$PATH$(find $HOME/.local/bin/ -type d -printf ":%p")
 
-# Make sure everything is set to exectuable
-chmod +x $HOME/.local/bin/*
-chmod +x $HOME/.local/bin/*/*
-chmod +x $HOME/.config/bspwm/*
+# Prompt
+PS1='[$][\[\e[m\]\[\e[35m\]\w\[\e[m\]] '
 
 # BLOCKSIZE=K;	export BLOCKSIZE
 # Setting TERM is normally done through /etc/ttys.
 # Do only override if you're sure that you'll never log in via telnet or xterm or a serial line.
 
 # Default programs:
-export TERM="st"
-export EDITOR="nvim"
+export TERM="alacritty"
+export EDITOR="mle"
 export FILE="nnn"
 export PAGER="less"
 
@@ -48,6 +46,14 @@ export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export _JAVA_AWT_WM_NONREPARENTING=1	# Fix for Java applications in dwm
 
+# If your gpu dosent support Alacritty
+#export LIBGL_ALWAYS_SOFTWARE=1 alacritty
+
+# Alias definitions.
+if [ -f ~/.config/aliasrc ]; then
+    . ~/.config/aliasrc
+fi
+
 # set bashrc each time sh is started for interactive use.
-[ -f $HOME/.bashrc ] && . $HOME/.bashrc
+#[ -f $HOME/.bashrc ] && . $HOME/.bashrc
 #[ -f $HOME/.ashrc ] && . $HOME/.ashrc
