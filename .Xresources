@@ -1,7 +1,7 @@
 ! font settings
-*.font: Ioveska Term:size=12
-urxvt.font: xft: Ioveska Term:size=12
-dmenu.font: Ioveska Term:size=12
+*.font: Hack:size=12
+urxvt.font: xft: Hack:size=12
+dmenu.font: Hack:size=12
 
 Xft.hinting: true
 Xft.autohint: true
@@ -24,40 +24,39 @@ Sxiv.background: #0c0c0c
 
 ! general
 *.alpha: 0.9
-*background: #0c0c0c
-*foreground: #f2f2f2
-*.cursorColor: #f2f2f2
-*fading: 35
-*fadeColor: #4C566A
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
 
-! blacks
-*color0: #0c0c0c
-*color8: #88C0D0
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
 
-! reds
-*color1: #3B4252
-*color9: #81A1C1
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
 
-! greens
-*color2: #434C5E
-*color10: #5E81AC
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
 
-! yellows
-*color3: #4C566A
-*color11: #BF616A
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
 
-! blues
-*color4: #D8DEE9
-*color12: #D08770
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
 
-! magentas
-*color5: #E5E9F0
-*color13: #EBCB8B
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
 
-! cyans
-*color6: #ECEFF4
-*color14: #A3BE8C
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
 
-! whites
-*color7: #8FBCBB
-*color15: #B48EAD
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2

@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/lyes/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Lighter"
+gtk-theme-name=""
 gtk-icon-theme-name="Tango"
 gtk-font-name="Roboto Condensed, 10"
 gtk-cursor-theme-name="Adwaita"
