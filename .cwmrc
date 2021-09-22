@@ -1,34 +1,34 @@
 # General settings
 borderwidth 2
-fontname "monospace:pixelsize=12:Regular"
+fontname "monospace:size=12:Medium"
 snapdist 5
 gap 0 0 0 0
 sticky yes
 
 # Executables
 unbind-key all
-bind-key 4S-Return	alacritty
+bind-key 4-Return	"alacritty"
 bind-key 4-d		menu-exec
-# menu-cmd menu-group menu-ssh menu-exec-wm
-bind-key 4-s        search
+bind-key 4-i        menu-window
 
 # Colors
 color activeborder "#98971a"
 color inactiveborder "#ebdbb2"
 
 color font "#ebdbb2"
-color selfont "#b8bb26"
+color selfont "#8f3f71"
 
-color menufg "#ebdbb2"
-color menubg "#cc241"
+color menufg "#b8bb26"
+color menubg "#282828"
 
 # Keybindings
-bind-key M-Tab      window-cycle
-bind-key 4-Tab      group-cycle
+bind-key 4-Tab      window-cycle
+bind-key M-Tab      group-cycle
 bind-key 4-f        window-maximize
 bind-key 4-space    window-fullscreen
 bind-key 4S-q       window-close
 bind-key 4S-b       window-vmaximize
+bind-key 4S-i		window-hide
 bind-key 4M-r       restart
 bind-key 4M-Escape  quit
 
@@ -43,10 +43,10 @@ autogroup 1 "Navigator,Firefox"
 autogroup 3 "mpv"
 
 # Commands
-command term 	"alacritty"
-command lock	"slock" # activer avec C-M-Suppr
-command firefox "firefox"
-command nnn 	"alacritty -e nnn"
+command term        "alacritty -size"
+command lock        "slock"
+command firefox     "firefox"
+command nnn         "alacritty -e nnn"
 
 # Special Keys
 bind-key XF86AudioLowerVolume "/usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -5%"
@@ -62,38 +62,40 @@ bind-key 4-Right            cyclegroup
 bind-key 4-Left             rcyclegroup
 
 # Move to group
-bind-key M-ampersand        group-only-1
-bind-key M-eacute           group-only-2
-bind-key M-quotedbl         group-only-3
-bind-key M-apostrophe       group-only-4
-bind-key M-parenleft        group-only-5
-bind-key M-minus            group-only-6
-bind-key M-egrave           group-only-7
-bind-key M-underscore       group-only-8
-bind-key M-ccedilla         group-only-9
-bind-key M-agrave           group-toggle-all
+bind-key 4-ampersand        group-only-1
+bind-key 4-eacute           group-only-2
+bind-key 4-quotedbl         group-only-3
+bind-key 4-apostrophe       group-only-4
+bind-key 4-parenleft        group-only-5
+bind-key 4-minus            group-only-6
+bind-key 4-egrave           group-only-7
+bind-key 4-underscore       group-only-8
+bind-key 4-ccedilla         group-only-9
+bind-key 4-agrave           group-toggle-all
 
 # Move windows to group
-bind-key MS-ampersand        window-movetogroup-1
-bind-key MS-eacute           window-movetogroup-2
-bind-key MS-quotedbl         window-movetogroup-3
-bind-key MS-apostrophe       window-movetogroup-4
-bind-key MS-parenleft        window-movetogroup-5
-bind-key MS-minus            window-movetogroup-6
-bind-key MS-egrave           window-movetogroup-7
-bind-key MS-underscore       window-movetogroup-8
-bind-key MS-ccedilla         window-movetogroup-9
+bind-key 4S-ampersand        window-movetogroup-1
+bind-key 4S-eacute           window-movetogroup-2
+bind-key 4S-quotedbl         window-movetogroup-3
+bind-key 4S-apostrophe       window-movetogroup-4
+bind-key 4S-parenleft        window-movetogroup-5
+bind-key 4S-minus            window-movetogroup-6
+bind-key 4S-egrave           window-movetogroup-7
+bind-key 4S-underscore       window-movetogroup-8
+bind-key 4S-ccedilla         window-movetogroup-9
 
 # Tiling
 htile 55%
 vtile 55%
 bind-key 4-t window-vtile
-bind-key 4-Return window-vtile
+bind-key 4S-Return window-vtile
 bind-key 4S-t window-htile
 
 # Ignore, and do not warp to, windows with these names
 ignore dmenu
 ignore dzen2
 ignore lemonbar
+ignore Bar
+ignore lemon
 ignore tint2
 ignore polybar
