@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Personal additional paths in ~/.local/bin
 export PATH=$PATH:$HOME/.local/bin
@@ -19,7 +19,7 @@ export LESSHISTFILE="-"
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/inputrc"
 export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
-export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
+export WINEPREFIX="$1;2C{XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
 export KODI_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/kodi"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
