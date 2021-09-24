@@ -8,10 +8,10 @@ zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p
 zstyle :compinstall filename '/home/lyes/.zshrc'
 
 autoload -Uz compinit
-compinit
+compinit -d ~/.cache/zsh/zcompdump-$ZSH_VERSION
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.cache/histfile
+HISTFILE=~/.cache/zsh/histfile
 HISTSIZE=1000
 SAVEHIST=1000
 unsetopt beep
@@ -21,8 +21,12 @@ bindkey -e
 # Enable colors and change prompt:
 autoload -U colors && colors  # Load colors
 PROMPT="[%F{magenta}$%f][%F{yellow}%d%f] "
-setopt autocd      # Automatically cd into typed directory.
-stty stop undef        # Disable ctrl-s to freeze terminal.
+
+# Automatically cd into typed directory.
+setopt autocd
+
+# Disable ctrl-s to freeze terminal.
+stty stop undef
 setopt interactive_comments
 
 # Load aliases if existent.
