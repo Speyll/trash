@@ -18,5 +18,12 @@ unsetopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-# prompt
+# Enable colors and change prompt:
+autoload -U colors && colors  # Load colors
 PROMPT="[%F{magenta}$%f][%F{yellow}%d%f] "
+setopt autocd      # Automatically cd into typed directory.
+stty stop undef        # Disable ctrl-s to freeze terminal.
+setopt interactive_comments
+
+# Load aliases if existent.
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
