@@ -1,14 +1,14 @@
 # General settings
-borderwidth 2
+borderwidth 1
 fontname "monospace:size=12:Medium"
 snapdist 5
-gap 0 0 0 0
+gap 24 0 0 0
 sticky yes
 
 # Executables
 unbind-key all
 bind-key 4-Return urxvt
-bind-key 4-d menu-exec
+bind-key 4-d "dmenu_run -p 'Select a program:'"
 bind-key 4-i menu-window
 
 # Colors
@@ -27,7 +27,6 @@ bind-key M-Tab      group-cycle
 bind-key 4-f        window-maximize
 bind-key 4-space    window-fullscreen
 bind-key 4S-q       window-close
-bind-key 4S-b       window-vmaximize
 bind-key 4S-i	    window-hide
 bind-key 4M-r       restart
 bind-key 4M-Escape  quit
@@ -37,6 +36,20 @@ unbind-mouse all
 bind-mouse 4-3 window-resize
 bind-mouse 4-1 window-move
 bind-mouse 4-2 window-lower
+
+# Snaping Resizing
+bind-key 4-Left window-snap-left
+bind-key 4-Right window-snap-right
+bind-key 4-Up window-snap-up
+bind-key 4-Down window-snap-down
+
+bind-key 4S-Left window-resize-left
+bind-key 4S-Right window-resize-right
+bind-key 4S-Up window-resize-up
+bind-key 4S-Down window-resize-down
+
+bind-key 4-h window-hmaximize
+bind-key 4-v window-vmaximize
 
 # Auto group with xprop
 autogroup 1 "Navigator,Firefox"
@@ -56,10 +69,6 @@ bind-key XF86MonBrightnessUp "/bin/xbacklight -inc 10"
 bind-key XF86MonBrightnessDown "/bin/xbacklight -dec 10"
 
 # Groupes
-# Groups keyboard bind-keyings
-bind-key 4-g                grouptoggle
-bind-key 4-Right            cyclegroup
-bind-key 4-Left             rcyclegroup
 
 # Move to group
 bind-key 4-ampersand        group-only-1

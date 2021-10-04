@@ -2,8 +2,8 @@
 
 # Set Wallpaper
 pkill hsetroot
-hsetroot -solid "#fbf1c7" &
-#hsetroot -cover $HOME/pictures/wall.jpg &
+#hsetroot -solid "#fbf1c7" &
+hsetroot -cover $HOME/pictures/wall.jpg &
 
 # Launch things
 #$HOME/.config/picom/launch.sh &
