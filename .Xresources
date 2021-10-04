@@ -1,11 +1,15 @@
 ! font settings
-*.font: Hack:size=12
-urxvt.font: xft: Hack:size=12
-dmenu.font: Hack:size=12
+*.font: monospace:size=12
+urxvt.font: xft: monospace:size=12
+dmenu.font: monospace:size=12
+URxvt.boldFont:
 
-Xft.hinting: true
-Xft.autohint: true
-Xft.rgba: true
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.rgba: rgb
+Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
 ! urxvt settings
@@ -14,8 +18,8 @@ urxvt.scrollBar: false
 urxvt.scrollbar_right: false
 urxvt.internalBorder: 25
 urxvt.cursorBlink: true
-! urxvt.transparent: true
-! urxvt.shading: 10
+urxvt.transparent: true
+urxvt.shading: 10
 
 ! sxiv settings
 Sxiv.font: Hack
@@ -23,7 +27,7 @@ Sxiv.foreground: #ebdbb2
 Sxiv.background: #282828
 
 ! general
-*.alpha: 0.9
+! *.alpha: 0.9
 ! hard contrast: *background: #1d2021
 *background: #282828
 ! soft contrast: *background: #32302f
