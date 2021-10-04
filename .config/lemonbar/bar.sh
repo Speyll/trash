@@ -16,8 +16,8 @@ Date() {
 
 # private IP
 Privip (){
-	#ip addr show | grep wl | awk '/inet/ {print $2}'
-	ip addr show | grep enp | awk '/inet/ {print $2}'
+	ip addr show | grep wl | awk '/inet/ {print $2}'
+	#ip addr show | grep enp | awk '/inet/ {print $2}'
 }
 
 # Public IP
