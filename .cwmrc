@@ -12,13 +12,13 @@ bind-key 4-d menu-exec
 bind-key 4-i menu-window
 
 # Colors
-color activeborder "#98971a"
-color inactiveborder "#ebdbb2"
+color activeborder "#ebdbb2"
+color inactiveborder "#282828"
 
 color font "#ebdbb2"
-color selfont "#8f3f71"
+color selfont "#fb4934"
 
-color menufg "#b8bb26"
+color menufg "#ebdbb2"
 color menubg "#282828"
 
 # Keybindings
@@ -28,7 +28,7 @@ bind-key 4-f        window-maximize
 bind-key 4-space    window-fullscreen
 bind-key 4S-q       window-close
 bind-key 4S-b       window-vmaximize
-bind-key 4S-i		window-hide
+bind-key 4S-i	    window-hide
 bind-key 4M-r       restart
 bind-key 4M-Escape  quit
 
@@ -43,10 +43,10 @@ autogroup 1 "Navigator,Firefox"
 autogroup 3 "mpv"
 
 # Commands
-command term        "alacritty -size"
+command term        "urxvt"
 command lock        "slock"
 command firefox     "firefox"
-command nnn         "alacritty -e nnn"
+command nnn         "urxvt -e nnn"
 
 # Special Keys
 bind-key XF86AudioLowerVolume "/usr/bin/pactl set-sink-volume @DEFAULT_SINK@ -5%"

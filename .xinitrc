@@ -12,7 +12,7 @@ if [ -f $HOME/.Xresources ]; then
 fi
 
 # Load files
-"${HOME}"/.config/autostart/autostart.sh &
+#"${HOME}"/.config/autostart/autostart &
 
 # wm settings
-exec cwm
+exec openbox-session
