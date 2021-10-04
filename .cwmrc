@@ -7,7 +7,7 @@ sticky yes
 
 # Executables
 unbind-key all
-bind-key 4-Return	urxvt
+bind-key 4-Returnurxvt
 bind-key 4-d menu-exec
 bind-key 4-i menu-window
 
