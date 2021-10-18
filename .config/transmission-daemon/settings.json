@@ -45,7 +45,7 @@
     "rpc-enabled": true,
     "rpc-host-whitelist": "",
     "rpc-host-whitelist-enabled": true,
-    "rpc-password": "algerie1",
+    "rpc-password": "",
     "rpc-port": 9091,
     "rpc-url": "/trap/",
     "rpc-username": "",

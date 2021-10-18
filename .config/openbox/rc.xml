@@ -25,45 +25,45 @@
 		<keepBorder>yes</keepBorder>
 		<animateIconify>no</animateIconify>
 		<font place="ActiveWindow">
-			<name>Ubuntu Condensed</name>
+			<name>Ubuntu Condonsed</name>
 			<size>10</size>
 			<weight>Regular</weight>
 			<slant>Normal</slant>
 		</font>
 		<font place="inactive">
-			<name>Ubuntu Condensed</name>
+			<name>Ubuntu Condonsed</name>
 			<size>10</size>
 			<weight>Regular</weight>
 			<slant>Normal</slant>
 		</font>
 		<font place="InactiveWindow">
-			<name>Ubuntu Condensed</name>
+			<name>Ubuntu Condonsed</name>
 			<size>10</size>
 			<weight>Regular</weight>
 			<slant>Normal</slant>
 		</font>
 		<font place="MenuHeader">
-			<name>Ubuntu Condensed</name>
+			<name>Ubuntu Condonsed</name>
 			<size>10</size>
-			<weight>Regular</weight>
+			<weight>Medium</weight>
 			<slant>Normal</slant>
 		</font>
 		<font place="MenuItem">
-			<name>Ubuntu Condensed</name>
+			<name>Ubuntu Condonsed</name>
 			<size>10</size>
-			<weight>Regular</weight>
+			<weight>Medium</weight>
 			<slant>Normal</slant>
 		</font>
 		<font place="ActiveOnScreenDisplay">
-			<name>Ubuntu Condensed</name>
+			<name>Ubuntu Condonsed</name>
 			<size>10</size>
-			<weight>Regular</weight>
+			<weight>Medium</weight>
 			<slant>Normal</slant>
 		</font>
 		<font place="InactiveOnScreenDisplay">
 			<name>Ubuntu Condensed</name>
 			<size>10</size>
-			<weight>Regular</weight>
+			<weight>Medium</weight>
 			<slant>Normal</slant>
 		</font>
 	</theme>
@@ -261,7 +261,7 @@
 		<!-- Keybindings for running applications -->
 		<keybind key="W-Return">
 			<action name="Execute">
-				<command>urxvt</command>
+				<command>st</command>
 			</action>
 		</keybind>
 		<keybind key="W-S-b">
@@ -269,19 +269,24 @@
 				<command>firefox</command>
 			</action>
 		</keybind>
+		<keybind key="W-S-s">
+			<action name="Execute">
+				<command>dmenulaunch</command>
+			</action>
+		</keybind>
 		<keybind key="XF86AudioRaiseVolume">
 			<action name="Execute">
-				<command>pulsevol --up</command>
+				<command>amixer sset Master 5%+</command>
 			</action>
 		</keybind>
 		<keybind key="XF86AudioLowerVolume">
 			<action name="Execute">
-				<command>pulsevol --down</command>
+				<command>amixer sset Master 5%-</command>
 			</action>
 		</keybind>
 		<keybind key="XF86AudioMute">
 			<action name="Execute">
-				<command>pulsevol --mute</command>
+				<command>amixer sset Master toggle</command>
 			</action>
 		</keybind>
 		<!-- Reload and Exit keybinds -->

@@ -10,7 +10,7 @@ super + Escape
 
 # Terminal emulator / tmux
 super + {Return, shift + Return}
-	{alacritty, alacritty --class tmux -e tmux}
+	{st, st -n tmux -e tmux}
 
 # Dmenu
 super + d
@@ -22,7 +22,7 @@ super + shift + b
 
 # File browser
 super + shift + p
-	alacritty --class nnn -e nnn
+	st -n nnn -e nnn
 
 # Lemonbar
 super + shift + r

@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Defaults
+amixer -q set Master 100% &
+xbacklight -set 60 &
+
 # Set Wallpaper
 pkill hsetroot
 #hsetroot -solid "#fbf1c7" &
@@ -7,8 +11,8 @@ hsetroot -cover $HOME/pictures/wall.jpg &
 
 # Launch things
 #$HOME/.config/picom/launch.sh &
-#$HOME/.config/sxhkd/launch.sh &
-$HOME/.config/lemonbar/launch.sh &
+$HOME/.config/sxhkd/launch.sh &
+$HOME/.config/lemonbar/lemon.sh &
 #$HOME/.config/polybar/launch.sh &
 
 # Dunst
