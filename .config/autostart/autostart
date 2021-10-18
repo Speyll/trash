@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Defaults
+sct 2500 &
 amixer -q set Master 100% &
 xbacklight -set 60 &
 
