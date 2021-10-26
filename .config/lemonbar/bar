@@ -1,17 +1,18 @@
 ﻿#!/bin/sh
 
-a="%{F#cc241d}"
+a="%{F#98971a}"
 t="%{F-}"
+sp="%{F#282828}-%{F-}" 
 
 add ()
 {
 	var=$(ip route get 1 | awk '{print $(NF-2);exit}')
-	echo "$a$t $var"
+	echo "$a$t $var"
 }
 
 bat ()
 {
-	device="BAT0"
+	device="BAT1"
 	var=$(cat /sys/class/power_supply/${device}/capacity)
 
 	case $var in
@@ -32,12 +33,12 @@ clk ()
 dte ()
 {
         var=$(date +%a\ %d\ %b)
-        echo "$a$t $var"
+        echo "$a$t $var"
 }
 
 ntw ()
 {
-	device="wlp2s0"
+	device="wlp7s0"
 	status=$(cat /sys/class/net/${device}/operstate)
 	quality=$(grep ${device} /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
 
@@ -90,12 +91,12 @@ mem ()
 hdd ()
 {
 	var=$(df -h | grep '/$' | awk '{print $5}')
-	echo "$a$t $var"
+	echo "$a$t $var"
 }
 
 while true
 do
-	BAR_INPUT="%{l} $(add) $(wth) %{c} $(clk) %{r} $(hdd) $(ntw) $(vol) $(mem) $(cpu) $(bat) $(dte) "
+	BAR_INPUT="%{l}${sp} $(clk) ${sp} $(wth) ${sp} $(dte) %{c}%{r} $(hdd) ${sp} $(ntw) ${sp} $(vol) ${sp} $(mem) ${sp} $(cpu) ${sp} $(bat) ${sp} $(add) ${sp} "
 	echo $BAR_INPUT 2>/dev/null
 	sleep 10s
 done
