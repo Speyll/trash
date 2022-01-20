@@ -12,7 +12,7 @@ add ()
 
 bat ()
 {
-	device="BAT1"
+	device="BAT0"
 	var=$(cat /sys/class/power_supply/${device}/capacity)
 
 	case $var in
@@ -38,7 +38,7 @@ dte ()
 
 ntw ()
 {
-	device="wlp7s0"
+	device="wlp2s0"
 	status=$(cat /sys/class/net/${device}/operstate)
 	quality=$(grep ${device} /proc/net/wireless | awk '{ print int($3 * 100 / 70) }')
 
@@ -47,7 +47,7 @@ ntw ()
 
 vol ()
 {
-        var=$(amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]')
+  var=$(amixer get Master | awk '$0~/Left/{print $5}' | tr -d '[]-')
         echo "$a$t $var"
 }
 

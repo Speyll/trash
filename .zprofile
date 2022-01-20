@@ -5,7 +5,7 @@ export PATH=$PATH:$HOME/.local/bin
 
 # Default programs
 export TERM="xterm-256color"
-export EDITOR="mle"
+export EDITOR="nvim"
 export FILE="nnn"
 export PAGER="less"
 
